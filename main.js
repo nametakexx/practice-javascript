@@ -11,6 +11,17 @@ console.log("month",month,"day",day);
 
 }
 
+const monthSlect = document.getElementById("month1")
+monthslectList();
+function monthslectList(){
+    for(let i=1;i=12;i++){}
+    let optin =document.createElement('option');
+    Option.value =i;
+    Option.textCntent = i + "月";
+    monthSlect.appendChild(option);
+
+}
+
 //document.getElementById("month")はタグを確認するだけ
 //valueはその値のタグの値を示す
 
