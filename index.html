@@ -7,8 +7,73 @@
     </head>
     <body>
         <h1>生年月日の入力</h1>
-        <input id="month" placeholder="月を入力してください">
-        <input id="day" placeholder="日を入力してください">
+        
+        <label for="month">月:</label>
+        <input type="number" id="month" placeholder="月を入力してください" min="1" max="12">
+        <label for="day">日:</label>
+        <input type="number" id="day" placeholder="日を入力してください" min="1" max="31">
+        
         <button onclick="errorInput()">入力</button>
+
+        <div></div>
+
+        <label for="pet-select">あなたの飼いたいペットは？:</label>
+        
+        <select name="pets" id="pet-slect">
+            <option value="">選択してください</optio>
+            <option value="dog">犬</option>
+            <option value="cat">猫</option>
+            <option value="humster">ハムスター</option>
+            <option value="parrot">インコ</option>
+            <option value="spider">蜘蛛</option>
+            <option value="goldfish">金魚</option>
+        </select>
+
+        <div></div>
+
+        <label for="month1-select">生年月日の入力:</label>
+        
+        <select name="month1" id="month1-slect">
+            <option value="">選択してください</optio>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="1">7</option>
+            <option value="2">8</option>
+            <option value="3">9</option>
+            <option value="4">10</option>
+            <option value="5">11</option>
+            <option value="6">12</option>
+
+            <select name="day1" id="day1-slect">
+                <option value="">選択してください</optio>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="1">7</option>
+                <option value="2">8</option>
+                <option value="3">9</option>
+                <option value="4">10</option>
+                <option value="5">11</option>
+                <option value="6">12</option>
+                <option value="1">13</option>
+                <option value="2">14</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="1">7</option>
+                <option value="2">8</option>
+                <option value="3">9</option>
+                <option value="4">10</option>
+                <option value="5">11</option>
+                <option value="6">12</option>
+        </select>
     </body>
 </html>
