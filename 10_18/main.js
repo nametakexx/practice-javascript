@@ -9,12 +9,12 @@
             switch(gameSelector.value){
                 case"none":
                     gameCountainer.textContent="ゲームを選ぶとここに表示されます"
-                    break;S
+                    break;
                     case"click-counter":
                 ClickCounterGame();
                 break;
                 case"number-guess":
-                NunbergessGame();
+                NumberGuessGame();
                 break;
             }
     })

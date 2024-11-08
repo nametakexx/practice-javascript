@@ -10,12 +10,17 @@
                 case"none":
                     gameCountainer.textContent="ゲームを選ぶとここに表示されます"
                     break;S
-                    case"click-counter":
-                ClickCounterGame();
-                break;
+                 case"click-counter":
+                    ClickCounterGame();
+                    break;
                 case"number-guess":
-                NunbergessGame();
-                break;
+                    NumberGuessGame();
+                    break;
+                case"RPS":
+                    RPS()
+                    break;
+            
+
             }
     })
 
