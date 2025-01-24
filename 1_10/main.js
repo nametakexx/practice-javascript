@@ -27,6 +27,7 @@
      function NumberGuessGame(){
         const randoNumber =Math.floor(Math.random()*100)+1;
         let message= document.createElement("p");
+         message.textContent = randoNumber;
         let input= document.createElement("input");
         input.type = "number";
         input.max = 100;
