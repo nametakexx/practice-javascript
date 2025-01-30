@@ -70,8 +70,15 @@ function ClickCounterGame(){
         else if (randomNumber <= val){
             message.textContent = "大きいよ"
         }
+        count++;
+        countDisplay.textContent = `試行回数 : ${count}`;
     })
     gameCountainer.appendChild(button)
+    
+    let count = 0;
+    const countDisplay = document.createElement("p");
+    countDisplay.textContent = `試行回数 : ${count}`;
+    gameCountainer.appendChild(countDisplay);
    
  } 
    startNumberGuesGame();
