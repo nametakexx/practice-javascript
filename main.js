@@ -1,6 +1,20 @@
+const gameSelector = document.getElementById('game-select');
+const gameContainer = document.getElementById("game-container");
+gameSelector.addEventListener('change',function(){
+    gameContainer.innerHTML = '';
+    switch(gameSelector.value) {
+        case 'number-guess':
+            startNumberGuesGame();
+            break;
+            case 'cliker':
+                ClickCounterGame();
+                break;
+    }
+})
+
 function ClickCounterGame(){
     let count = 0;
-    const gameCountainer = document.getElementById("game-container");
+    const gameContainer = document.getElementById("game-container");
  
     let button1 = document.createElement("button");
      button1.textContent = "+1ボタン";
@@ -35,17 +49,17 @@ function ClickCounterGame(){
         count=0;
         counter.textContent = count;
     })
-     gameCountainer.appendChild(button1);
-     gameCountainer.appendChild(button2);
-     gameCountainer.appendChild(button3);
-     gameCountainer.appendChild(counter);
+     gameContainer.appendChild(button1);
+     gameContainer.appendChild(button2);
+     gameContainer.appendChild(button3);
+     gameContainer.appendChild(counter);
      
  }
- ClickCounterGame();
+
 
 
  function startNumberGuesGame(){
-    const gameCountainer = document.getElementById("game-container");
+    const gameContainer = document.getElementById("game-container");
     const randomNumber = Math.floor(Math.random() * 100)+1;
     let message = document.createElement("p");
     message.textContent = randomNumber;
@@ -53,8 +67,8 @@ function ClickCounterGame(){
     input.type = "nunber";
     input.placeholder = "好きな数字を入力してください (1 ~ 100)"
 
-    gameCountainer.appendChild(message);
-    gameCountainer.appendChild(input);
+    gameContainer.appendChild(message);
+    gameContainer.appendChild(input);
     
     let button = document.createElement("button")
     button.textContent = "確認"
@@ -73,12 +87,12 @@ function ClickCounterGame(){
         count++;
         countDisplay.textContent = `試行回数 : ${count}`;
     })
-    gameCountainer.appendChild(button)
+    gameContainer.appendChild(button)
     
     let count = 0;
     const countDisplay = document.createElement("p");
     countDisplay.textContent = `試行回数 : ${count}`;
-    gameCountainer.appendChild(countDisplay);
+    gameContainer.appendChild(countDisplay);
    
  } 
-   startNumberGuesGame();
+   
